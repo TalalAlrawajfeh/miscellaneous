@@ -1,0 +1,16 @@
+mysql: &mysql
+  adapter: mysql2
+  host: <%= ENV['DATABASE_HOST'] %>
+  port: <%= ENV['DATABASE_PORT'] %>
+  username: <%= ENV['DATABASE_USERNAME'] %>
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  database: productsdb
+
+development:
+  <<: *mysql
+
+production:
+  <<: *mysql
+
+test:
+  <<: *mysql

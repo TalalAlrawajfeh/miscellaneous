@@ -1,0 +1,9 @@
+source "https://rubygems.org"
+
+gem "sinatra"
+gem "rake"
+gem "mysql2"
+gem "activerecord"
+gem "sinatra-activerecord"
+gem "json"
+gem "rest-client"
